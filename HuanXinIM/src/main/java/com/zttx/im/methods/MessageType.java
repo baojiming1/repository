@@ -21,22 +21,23 @@ public enum MessageType {
 	/**
 	 * 普通文本信息
 	 */
-	TXT,
+	txt,
 	/**
 	 * 图片信息
 	 */
-	IMG,
+	img,
 	/**
 	 * 语音信息
 	 */
-	AUDIO,
+	audio,
 	/**
 	 * 视频信息
 	 */
-	VIDEO,
+	video,
 	/**
 	 * 透传信息
 	 */
-	CMD
+	cmd
+	
 	
 }

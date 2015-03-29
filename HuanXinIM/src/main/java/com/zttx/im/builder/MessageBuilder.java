@@ -89,7 +89,7 @@ public class MessageBuilder<T> {
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public MessageBuilder<T> setTextMsg( String msg){
 		M m = message.new M();
-		m.setType(MessageType.TXT);
+		m.setType(MessageType.txt);
 		m.setMsg(msg);
 		this.message.setMsg(m);
 		return this;
@@ -122,9 +122,26 @@ public class MessageBuilder<T> {
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public MessageBuilder<T> setImgMsg(String url, String filename){
 		M m = message.new M();
-		m.setType(MessageType.IMG);
+		m.setType(MessageType.img);
 		m.setUrl(url);
 		m.setFilename(filename);
+		this.message.setMsg(m);
+		return this;
+	}
+	
+	/**
+	 * 描述：
+	 * <pre>
+	 * 设置透析消息
+	 * </pre>
+	 * @param action
+	 * @return
+	 */
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	public MessageBuilder<T> setAction(String action){
+		M m = message.new M();
+		m.setType(MessageType.cmd);
+		m.setAction(action);
 		this.message.setMsg(m);
 		return this;
 	}

@@ -57,15 +57,15 @@ public class TokenManager {
 	
 	//获取权限Token秘钥
 	public static String getAuthorization(){
-		/*Token token = getToken();
+		Token token = getToken();
 		if( token == null ){			//第一次
 			token = initToken();
 		}
 		if( isExpires() ){				//过期
 			token = initToken();
 		}
-		return token.getAccess_token();*/
-		return "YWMt2_oMvMuBEeS_CB8hRgkZSgAAAU1VV-QxYpWsyhX0_HlahjLHJX-CPYivmPI";
+		return token.getAccess_token();
+		//return "YWMt2_oMvMuBEeS_CB8hRgkZSgAAAU1VV-QxYpWsyhX0_HlahjLHJX-CPYivmPI";
 	}
 	
 	
